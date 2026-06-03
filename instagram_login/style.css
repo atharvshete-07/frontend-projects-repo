@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #494D53;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-content {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.first-section {
+    padding: 50px;
+    margin-right: 2px;
+    background: #0C1014;
+}
+
+.logo img {
+    width: 100px;
+    background-color: transparent;
+}
+
+.message {
+    color: azure;
+    font-weight: 300;
+}
+
+.message pre {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.message span {
+    background: linear-gradient(to right, orange, red, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 440px;
+}
+
+.login-page {
+    background-color: #1f1f22;
+    color: white;
+    padding: 70px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 100px;
+}
+
+.login-page,
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-page input {
+    width: 530px;
+    padding: 15px;
+    font-size: 15px;
+    color: rgb(220, 217, 217);
+    background: transparent;
+    border-radius: 14px;
+    border: 1px solid rgb(184, 182, 182);
+}
+
+.login-page button {
+    background: transparent;
+    border-radius: 20px;
+    height: 42px;
+
+}
+
+#log-in {
+    background-color: #0064E0;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+
+.text {
+    text-align: center;
+}
+
+#log {
+    margin-top: 50px;
+    color: white;
+    font-size: 15px;
+}
+
+#new-account {
+    color: #0064E0;
+    border-color: #0064E0;
+    font-size: 15px;
+}
+
+footer {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    background-color: #0C1014;
+    padding: 17px;
+}
+
+@media(max-width:900px) {
+
+    .body-content {
+        flex-direction: column;
+    }
+
+    .login-page {
+        width: 100%;
+    }
+
+    .message p {
+        font-size: 24px;
+    }
+
+    .image img {
+        max-width: 300px;
+    }
+}
