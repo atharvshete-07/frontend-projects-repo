@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body {
+    background: radial-gradient(circle, rgb(203, 203, 203), rgb(66, 66, 66));
+    min-height: 100vh;
+    color: #ffffff;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    background: linear-gradient(90deg,
+            rgb(84, 84, 84),
+            rgb(152, 147, 158),
+            rgb(95, 95, 95));
+    color: rgb(15, 1, 37);
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.choice:nth-child(1) {
+    background: #c2213f;
+}
+
+.choice:nth-child(2) {
+    background: #e0b817;
+}
+
+.choice:nth-child(3) {
+    background: #2a72a5;
+}
+
+.choice:hover {
+    cursor: pointer;
+    transform: translateY(-10px) scale(1.08);
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.score {
+    background: grey;
+    border: 2px solid white;
+    padding: 1.5rem 2.5rem;
+    border-radius: 16px;
+    min-width: 150px;
+    box-shadow:
+        inset 0 4px 10px rgba(0, 0, 0, 0.6),
+        0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 0 0 12px rgb(45, 45, 45);
+}
+
+.msg-container {
+    margin-top: 4rem;
+}
+
+#msg {
+    background: #081b31;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    display: inline-block;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .choices {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 108px;
+        width: 108px;
+    }
+
+    .score-board {
+        gap: 1rem;
+    }
+
+    .score {
+        padding: 1rem;
+        min-width: 120px;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 2.8rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
