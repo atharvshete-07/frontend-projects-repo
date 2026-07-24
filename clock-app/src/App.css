@@ -1,0 +1,99 @@
+:root {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    background: #0f172a;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, rgba(104, 104, 254, 0.605), #090120);
+}
+
+.app-container {
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(247, 246, 246, 0.2);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+.heading {
+    position: relative;
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: 0.14em;
+    color: transparent;
+    background: linear-gradient(135deg, #84d4ff 0%, #c07dff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0 16px 40px rgba(1, 19, 45, 0.28);
+}
+
+.heading::after {
+    content: "A modern clock experience";
+    display: block;
+    margin-top: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgba(241, 245, 255, 0.78);
+    letter-spacing: 0.12em;
+}
+
+.description {
+    color: #d8e5ff;
+    margin: 0 auto 1.8rem;
+    max-width: 36rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    text-shadow: 0 1px 2px rgba(8, 20, 38, 0.35);
+}
+
+.description::before {
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 4px;
+    margin-bottom: 0.85rem;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+    background: linear-gradient(90deg, #7ddcff, #d4a3ff);
+    border-radius: 999px;
+}
+
+.time-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, .05);
+}
+
+.worldtime {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(248, 247, 247, 0.274);
+}
+
+.worldtime span {
+    display: block;
+    margin-top: .5rem;
+    font-size: 1.11rem;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.829);
+}
+
+@media (max-width: 500px) {
+    .app-container {
+        padding: 1.5rem;
+    }
+
+    .fw-bolder {
+        font-size: 1.8rem;
+    }
+}
